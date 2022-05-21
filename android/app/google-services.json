@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "549082451955",
+    "project_id": "splitkaro-61970",
+    "storage_bucket": "splitkaro-61970.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549082451955:android:3f24335b56fe40edf64c86",
+        "android_client_info": {
+          "package_name": "com.splitkaro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549082451955-cfjs3a4hanh48a8oag5tohsuqaf7ads2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvgnyLt1x0VSA58EQg6duy68hM9TzUwBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "549082451955-cfjs3a4hanh48a8oag5tohsuqaf7ads2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

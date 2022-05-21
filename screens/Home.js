@@ -18,22 +18,24 @@ const Home = ({navigation}) => {
   const [loading, setLoading] = useState(true);
   const focus = useIsFocused();
   useEffect(() => {
-    setLoading(true);
-    firestore()
-      .collection('Test User')
-      .get()
-      .then(querySnapshot => {
-        setgroups(
-          querySnapshot.docs.map(k => {
-            return {...k._data, id: k.id};
-          }),
-        );
-        setLoading(false);
-      })
-      .catch(e => {
-        setLoading(false);
-        console.log(e);
-      });
+    if (focus) {
+      setLoading(true);
+      firestore()
+        .collection('Test User')
+        .get()
+        .then(querySnapshot => {
+          setgroups(
+            querySnapshot.docs.map(k => {
+              return {...k._data, id: k.id};
+            }),
+          );
+          setLoading(false);
+        })
+        .catch(e => {
+          setLoading(false);
+          console.log(e);
+        });
+    }
   }, [focus]);
 
   const FAB = () => {

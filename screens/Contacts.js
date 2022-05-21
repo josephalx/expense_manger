@@ -7,12 +7,16 @@ import {
   FlatList,
   TouchableOpacity,
   TextInput,
+  LogBox,
 } from 'react-native';
 import React, {useState, useEffect} from 'react';
 import CheckBox from '@react-native-community/checkbox';
 import Contacts from 'react-native-contacts';
 
 const ContactList = ({route, navigation}) => {
+    LogBox.ignoreLogs([
+    'Warning: Non-serializable values were found in the navigation state',
+  ]);
   const [search, setsearch] = useState('');
   const [contacts, setContacts] = useState([]);
   const cont = async () => {
